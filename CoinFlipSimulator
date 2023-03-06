@@ -1,0 +1,24 @@
+
+public class CoinFlipSimulator(){
+
+    int headsCount = 0;
+    int tailsCount = 0;
+
+    Random rand = new Random();
+    
+    for(i=0; i<10; i++){
+        int result = rand.nextInt(2);
+
+        if(result == 0){
+            //heads
+            headsCount++;
+            System.out.println("headscount ", headscount);
+        }else{
+            //tails
+            tailsCount++;
+            System.out.println("tailscount ", tailscount);
+        }
+    }
+    System.out.println("Total ", result);
+
+}
