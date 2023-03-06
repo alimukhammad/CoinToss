@@ -5,20 +5,23 @@ public class CoinFlipSimulator(){
     int tailsCount = 0;
 
     Random rand = new Random();
-    
-    for(i=0; i<10; i++){
-        int result = rand.nextInt(2);
+    Scanner scanner = new Scanner(System.in);
+    String input = "";
 
+    while(!input.equals("q")) {
+        System.out.println("Press any key to flip the coin or q to quit:");
+        input = scanner.nextLine();
+        
+        int result = rand.nextInt(2);
+        
         if(result == 0){
             //heads
             headsCount++;
-            System.out.println("headscount ", headscount);
+            System.out.println("heads count ", headsCount);
         }else{
             //tails
             tailsCount++;
-            System.out.println("tailscount ", tailscount);
+            System.out.println("tails count ", tailsCount);
         }
     }
-    System.out.println("Total ", result);
-
 }
